@@ -1,15 +1,22 @@
 # Referencia de Plantillas (Templates)
 
-Esta sección detalla los códigos de plantilla preconfigurados en el sistema LiteBans. El uso de plantillas garantiza la estandarización de los tiempos y razones de sanción.
+Este documento detalla las plantillas de sanción configuradas en el servidor. El sistema utiliza **escalada automática (Ladders)**: si un usuario reincide en la misma falta dentro del tiempo de expiración, la sanción será automáticamente más severa.
+
+## Leyenda
+*   🛡️ **IP Ban**: La plantilla bloquea también la dirección IP del usuario.
+*   🪜 **Escalada**: Tiempo que tarda en "reiniciarse" el nivel de gravedad de la falta.
+
+---
 
 ## Plantillas de Bloqueo (Bans)
 
-| ID Plantilla | Razón Automática | Escalada (Ladder) |
-| :--- | :--- | :--- |
-| `Hack-General` | Uso de Cliente Modificado / Ventaja Injusta | 30d -> Permanente |
-| `XRay` | Uso de X-Ray o Paquetes ilegales | 7d -> 14d -> Permanente |
-| `Toxicidad-Extrema` | Toxicidad Extrema / Discurso de Odio | 7d -> Permanente |
-| `Acoso` | Acoso a usuarios o Staff | 5d -> 30d -> Permanente |
+| ID Plantilla | Razón Automática | Escalada (Ladder) | Notas |
+| :--- | :--- | :--- | :--- |
+| `Hack-General` | Uso de Cliente Modificado | 30d -> Permanente | 🛡️ **IP Ban activado** |
+| `XRay` | Uso de X-Ray / Texturas | 7d -> 14d -> Permanente | No afecta IP |
+| `Toxicidad-Extrema` | Toxicidad Extrema / Odio | 7d -> Permanente | Faltas graves de respeto |
+| `Acoso` | Acoso a usuarios o Staff | 5d -> 30d -> Permanente | |
+| `Bot-Attack` | Ataque de Bots | **Permanente** | 🛡️ Solo Admins |
 
 **Ejemplo de uso:**
 `/tempban Jugador #Hack-General`
