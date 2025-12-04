@@ -18,8 +18,8 @@ theme:
     # Modo Claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: deep purple
+      primary: blue grey
+      accent: deep orange
       toggle:
         icon: material/weather-night
         name: Cambiar a modo oscuro
@@ -27,8 +27,8 @@ theme:
     # Modo Oscuro (Slate es más elegante que el negro puro)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: blue grey
+      accent: deep orange
       toggle:
         icon: material/weather-sunny
         name: Cambiar a modo claro
