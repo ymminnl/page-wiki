@@ -771,16 +771,16 @@
 
 <h1 id="helpers">Helpers</h1>
 <h2 id="descripcion">Descripción</h2>
-<p>Asistencia a usuarios y moderación preventiva.</p>
+<p>Asistencia a usuarios y moderación preventiva del chat.</p>
 <hr />
 <h2 id="gestion-de-sanciones">Gestión de Sanciones</h2>
 <ul>
-<li><strong><code>/warn &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Advertencia.</li>
-<li><strong><code>/kick &lt;jugador&gt; &lt;razón&gt;</code></strong>: Expulsión.</li>
-<li><strong><code>/mute &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Silencio temporal.</li>
-<li><strong><code>/freeze &lt;jugador&gt;</code></strong>: Inmovilizar.</li>
-<li><strong><code>/warnings &lt;jugador&gt;</code></strong>: Ver advertencias.</li>
-<li><strong><code>/checkwarn &lt;jugador&gt;</code></strong>: Estado de warn.</li>
+<li><strong><code>/warn &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Emite una advertencia registrada en el historial del usuario.</li>
+<li><strong><code>/kick &lt;jugador&gt; &lt;razón&gt;</code></strong>: Expulsa a un jugador del servidor (Desconexión forzada).</li>
+<li><strong><code>/mute &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Aplica silencio temporal. La duración es calculada por la plantilla.</li>
+<li><strong><code>/freeze &lt;jugador&gt;</code></strong>: Inmoviliza a un jugador para revisión o chat administrativo.</li>
+<li><strong><code>/warnings &lt;jugador&gt;</code></strong>: Muestra la lista activa de advertencias de un usuario.</li>
+<li><strong><code>/checkwarn &lt;jugador&gt;</code></strong>: Verifica el estado de una advertencia específica.</li>
 </ul>
 <h3 id="plantillas-comunes">Plantillas Comunes</h3>
 <ul>
@@ -793,27 +793,27 @@
 <hr />
 <h2 id="investigacion">Investigación</h2>
 <ul>
-<li><strong><code>/history &lt;jugador&gt;</code></strong>: Historial de sanciones.</li>
-<li><strong><code>/checkban &lt;jugador&gt;</code></strong>: Estado ban.</li>
-<li><strong><code>/checkmute &lt;jugador&gt;</code></strong>: Estado mute.</li>
-<li><strong><code>/dupeip &lt;jugador&gt;</code></strong>: Multicuentas.</li>
-<li><strong><code>/iphistory &lt;jugador&gt;</code></strong>: Historial IPs.</li>
-<li><strong><code>/geoip &lt;jugador&gt;</code></strong>: Ubicación.</li>
-<li><strong><code>/litebans help</code></strong>: Ayuda general.</li>
+<li><strong><code>/history &lt;jugador&gt;</code></strong>: Muestra el historial completo de sanciones del usuario.</li>
+<li><strong><code>/checkban &lt;jugador&gt;</code></strong>: Verifica si un usuario tiene un bloqueo activo.</li>
+<li><strong><code>/checkmute &lt;jugador&gt;</code></strong>: Verifica si un usuario está silenciado actualmente.</li>
+<li><strong><code>/dupeip &lt;jugador&gt;</code></strong>: Escaneo de coincidencias de IP para detectar multicuentas.</li>
+<li><strong><code>/iphistory &lt;jugador&gt;</code></strong>: Muestra el historial de direcciones IP usadas por el usuario.</li>
+<li><strong><code>/geoip &lt;jugador&gt;</code></strong>: Muestra la ubicación geográfica aproximada de la conexión.</li>
+<li><strong><code>/litebans help</code></strong>: Muestra la ayuda general del sistema de sanciones.</li>
 </ul>
 <hr />
 <h2 id="supervision">Supervisión</h2>
 <ul>
-<li><strong><code>/vanish</code></strong>: Invisible.</li>
-<li><strong><code>/socialspy</code></strong>: Chat privado.</li>
-<li><strong><code>/staffchat</code></strong>: Chat staff.</li>
-<li><strong><code>/invsee &lt;jugador&gt;</code></strong>: Ver inventario.</li>
-<li><strong><code>/enderchest &lt;jugador&gt;</code></strong>: Ver Ender Chest.</li>
+<li><strong><code>/vanish</code></strong>: Activa el modo invisible para monitorear sin ser visto.</li>
+<li><strong><code>/socialspy</code></strong>: Permite leer los mensajes privados (<code>/msg</code>) de otros usuarios en tiempo real.</li>
+<li><strong><code>/staffchat</code></strong>: Canal de chat exclusivo para comunicación interna del staff.</li>
+<li><strong><code>/invsee &lt;jugador&gt;</code></strong>: Permite abrir y visualizar el inventario de un usuario.</li>
+<li><strong><code>/enderchest &lt;jugador&gt;</code></strong>: Permite abrir y visualizar el cofre de ender de un usuario.</li>
 </ul>
 <hr />
 <h2 id="movimiento">Movimiento</h2>
 <ul>
-<li><strong><code>/tp &lt;jugador&gt;</code></strong>: Teletransporte.</li>
+<li><strong><code>/tp &lt;jugador&gt;</code></strong>: Teletransportarse instantáneamente a la ubicación de un jugador.</li>
 </ul>
 
 
@@ -835,7 +835,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 de diciembre de 2025 19:30:00 UTC"><span class="timeago" datetime="2025-12-04T19:30:00+00:00" locale="es"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 de diciembre de 2025 19:30:00 UTC">2025-12-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 de diciembre de 2025 19:31:10 UTC"><span class="timeago" datetime="2025-12-04T19:31:10+00:00" locale="es"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 de diciembre de 2025 19:31:10 UTC">2025-12-04</span>
   </span>
 
     

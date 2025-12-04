@@ -503,10 +503,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#plantillas-mod" class="md-nav__link">
+  <a href="#plantillas-de-moderacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Plantillas Mod
+        Plantillas de Moderación
       
     </span>
   </a>
@@ -715,10 +715,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#plantillas-mod" class="md-nav__link">
+  <a href="#plantillas-de-moderacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Plantillas Mod
+        Plantillas de Moderación
       
     </span>
   </a>
@@ -793,17 +793,17 @@
 
 <h1 id="moderadores">Moderadores</h1>
 <h2 id="autoridad">Autoridad</h2>
-<p>Gestión de sanciones graves y administración. Incluye comandos de Helper.</p>
+<p>Gestión de sanciones graves, seguridad del servidor y administración de usuarios. Incluye todas las competencias del rango Helper.</p>
 <hr />
 <h2 id="bans-bloqueos">Bans (Bloqueos)</h2>
 <ul>
-<li><strong><code>/ban &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Bloquear acceso.</li>
-<li><strong><code>/unban &lt;jugador&gt;</code></strong>: Revocar bloqueo.</li>
-<li><strong><code>/banlist</code></strong>: Lista de baneados.</li>
+<li><strong><code>/ban &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Bloquea el acceso al servidor. La plantilla define si es temporal o permanente.</li>
+<li><strong><code>/unban &lt;jugador&gt;</code></strong>: Revoca un bloqueo activo. Requiere justificación.</li>
+<li><strong><code>/banlist</code></strong>: Muestra la lista de los últimos usuarios bloqueados.</li>
 </ul>
-<h3 id="plantillas-mod">Plantillas Mod</h3>
+<h3 id="plantillas-de-moderacion">Plantillas de Moderación</h3>
 <ul>
-<li><code>Hack-General</code> (IP Ban)</li>
+<li><code>Hack-General</code> (Aplica bloqueo de IP automático)</li>
 <li><code>XRay</code></li>
 <li><code>Toxicidad-Extrema</code></li>
 <li><code>Acoso</code></li>
@@ -811,41 +811,41 @@
 <hr />
 <h2 id="mutes-y-warns">Mutes y Warns</h2>
 <ul>
-<li><strong><code>/mute &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Silenciar.</li>
-<li><strong><code>/unmute &lt;jugador&gt;</code></strong>: Revocar silencio.</li>
-<li><strong><code>/warn &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Advertir.</li>
-<li><strong><code>/unwarn &lt;jugador&gt;</code></strong>: Revocar advertencia.</li>
-<li><strong><code>/warnings &lt;jugador&gt;</code></strong>: Ver advertencias.</li>
+<li><strong><code>/mute &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Silencia al usuario en el chat.</li>
+<li><strong><code>/unmute &lt;jugador&gt;</code></strong>: Revoca un silencio activo.</li>
+<li><strong><code>/warn &lt;jugador&gt; &lt;plantilla&gt;</code></strong>: Emite una advertencia formal.</li>
+<li><strong><code>/unwarn &lt;jugador&gt;</code></strong>: Elimina una advertencia específica del historial.</li>
+<li><strong><code>/warnings &lt;jugador&gt;</code></strong>: Muestra el listado de advertencias activas.</li>
 </ul>
 <hr />
 <h2 id="administracion">Administración</h2>
 <ul>
-<li><strong><code>/clearinventory &lt;jugador&gt;</code></strong>: Borrar inventario.</li>
-<li><strong><code>/clearenderchest &lt;jugador&gt;</code></strong>: Borrar Ender Chest.</li>
-<li><strong><code>/freeze &lt;jugador&gt;</code></strong>: Congelar.</li>
-<li><strong><code>/kick &lt;jugador&gt;</code></strong>: Expulsar.</li>
+<li><strong><code>/clearinventory &lt;jugador&gt;</code></strong>: Borra permanentemente todo el inventario del jugador.</li>
+<li><strong><code>/clearenderchest &lt;jugador&gt;</code></strong>: Borra permanentemente el contenido del Ender Chest.</li>
+<li><strong><code>/freeze &lt;jugador&gt;</code></strong>: Congelar movimiento del usuario.</li>
+<li><strong><code>/kick &lt;jugador&gt;</code></strong>: Desconexión forzada del servidor.</li>
 </ul>
 <h2 id="modos-de-juego">Modos de Juego</h2>
 <ul>
-<li><strong><code>/fly</code></strong>: Vuelo.</li>
-<li><strong><code>/gms</code></strong>: Survival.</li>
-<li><strong><code>/gmsp</code></strong>: Espectador.</li>
-<li><strong><code>/tphere &lt;jugador&gt;</code></strong>: Traer jugador.</li>
-<li><strong><code>/tp &lt;jugador&gt;</code></strong>: Ir a jugador.</li>
-<li><strong><code>/mv</code></strong>: Mundos.</li>
+<li><strong><code>/fly</code></strong>: Activa o desactiva el modo de vuelo.</li>
+<li><strong><code>/gms</code></strong>: Cambia tu modo de juego a Supervivencia.</li>
+<li><strong><code>/gmsp</code></strong>: Cambia tu modo de juego a Espectador (Ghost Mode).</li>
+<li><strong><code>/tphere &lt;jugador&gt;</code></strong>: Teletransporta al usuario hacia tu posición.</li>
+<li><strong><code>/tp &lt;jugador&gt;</code></strong>: Teletransportarse a la posición de un usuario.</li>
+<li><strong><code>/mv</code></strong>: Acceso a comandos de gestión de mundos (Multiverse).</li>
 </ul>
 <hr />
 <h2 id="investigacion-avanzada">Investigación Avanzada</h2>
 <ul>
-<li><strong><code>/namehistory &lt;jugador&gt;</code></strong>: Historial nombres.</li>
-<li><strong><code>/dupeip &lt;jugador&gt;</code></strong>: Multicuentas.</li>
-<li><strong><code>/iphistory &lt;jugador&gt;</code></strong>: Historial IPs.</li>
-<li><strong><code>/geoip &lt;jugador&gt;</code></strong>: Geolocalización.</li>
-<li><strong><code>/history &lt;jugador&gt;</code></strong>: Historial completo.</li>
-<li><strong><code>/socialspy</code></strong>: Espionaje chat.</li>
-<li><strong><code>/invsee</code></strong> / <strong><code>/enderchest</code></strong>: Inspección.</li>
-<li><strong><code>/vanish</code></strong>: Invisible.</li>
-<li><strong><code>/staffchat</code></strong>: Chat interno.</li>
+<li><strong><code>/namehistory &lt;jugador&gt;</code></strong>: Historial de cambios de nombre de usuario (Mojang).</li>
+<li><strong><code>/dupeip &lt;jugador&gt;</code></strong>: Detección de cuentas compartidas o multicuentas.</li>
+<li><strong><code>/iphistory &lt;jugador&gt;</code></strong>: Registro histórico de IPs de conexión.</li>
+<li><strong><code>/geoip &lt;jugador&gt;</code></strong>: Localización geográfica de la IP.</li>
+<li><strong><code>/history &lt;jugador&gt;</code></strong>: Historial completo de LiteBans.</li>
+<li><strong><code>/socialspy</code></strong>: Monitorización de mensajes privados.</li>
+<li><strong><code>/invsee</code></strong> / <strong><code>/enderchest</code></strong>: Inspección de inventarios.</li>
+<li><strong><code>/vanish</code></strong>: Modo invisible.</li>
+<li><strong><code>/staffchat</code></strong>: Comunicación interna.</li>
 </ul>
 
 
@@ -867,7 +867,7 @@
     <span class="md-icon" title="Última actualización">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 de diciembre de 2025 19:30:00 UTC"><span class="timeago" datetime="2025-12-04T19:30:00+00:00" locale="es"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 de diciembre de 2025 19:30:00 UTC">2025-12-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 de diciembre de 2025 19:31:10 UTC"><span class="timeago" datetime="2025-12-04T19:31:10+00:00" locale="es"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 de diciembre de 2025 19:31:10 UTC">2025-12-04</span>
   </span>
 
     
