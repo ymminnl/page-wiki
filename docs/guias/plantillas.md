@@ -1,22 +1,22 @@
 # Referencia de Plantillas (Templates)
 
-Este documento detalla las plantillas de sanción configuradas en el servidor. El sistema utiliza **escalada automática (Ladders)**: si un usuario reincide en la misma falta dentro del tiempo de expiración, la sanción será automáticamente más severa.
+Este documento detalla las plantillas de sanción configuradas. El sistema utiliza **escalada automática (Ladders)**.
 
 ## Leyenda
-*   🛡️ **IP Ban**: La plantilla bloquea también la dirección IP del usuario.
-*   🪜 **Escalada**: Tiempo que tarda en "reiniciarse" el nivel de gravedad de la falta.
+*   🛡️ **IP Ban**: Bloquea también la dirección IP.
+*   👮 **Rango**: Nivel mínimo de staff requerido para usar esta plantilla.
 
 ---
 
 ## Plantillas de Bloqueo (Bans)
 
-| ID Plantilla | Razón Automática | Escalada (Ladder) | Notas |
-| :--- | :--- | :--- | :--- |
-| `Hack-General` | Uso de Cliente Modificado | 30d -> Permanente | 🛡️ **IP Ban activado** |
-| `XRay` | Uso de X-Ray / Texturas | 7d -> 14d -> Permanente | No afecta IP |
-| `Toxicidad-Extrema` | Toxicidad Extrema / Odio | 7d -> Permanente | Faltas graves de respeto |
-| `Acoso` | Acoso a usuarios o Staff | 5d -> 30d -> Permanente | |
-| `Bot-Attack` | Ataque de Bots | **Permanente** | 🛡️ Solo Admins |
+| ID Plantilla | Rango Mínimo | Razón Automática | Escalada (Ladder) | Notas |
+| :--- | :--- | :--- | :--- | :--- |
+| `Hack-General` | **Moderador** | Uso de Cliente Modificado | 30d -> Permanente | 🛡️ **IP Ban** |
+| `XRay` | **Moderador** | Uso de X-Ray / Texturas | 7d -> 14d -> Permanente | |
+| `Toxicidad-Extrema` | **Moderador** | Toxicidad Extrema / Odio | 7d -> Permanente | |
+| `Acoso` | **Moderador** | Acoso a usuarios o Staff | 5d -> 30d -> Permanente | |
+| `Bot-Attack` | **ADMIN** | Ataque de Bots | **Permanente** | 🛡️ **IP Ban** |
 
 **Ejemplo de uso:**
 `/tempban Jugador #Hack-General`
@@ -25,11 +25,11 @@ Este documento detalla las plantillas de sanción configuradas en el servidor. E
 
 ## Plantillas de Silencio (Mutes)
 
-| ID Plantilla | Razón Automática | Escalada (Ladder) |
-| :--- | :--- | :--- |
-| `Spam` | Spam / Flood en chat | 15m -> 1h -> 6h -> 1d |
-| `Toxicidad-Leve` | Falta de respeto / Toxicidad leve | 30m -> 3h -> 1d -> 3d |
-| `Publicidad` | Publicidad no autorizada | 7d -> Permanente |
+| ID Plantilla | Rango Mínimo | Razón Automática | Escalada (Ladder) |
+| :--- | :--- | :--- | :--- |
+| `Spam` | **Helper** | Spam / Flood en chat | 15m -> 1h -> 6h -> 1d |
+| `Toxicidad-Leve` | **Helper** | Falta de respeto / Toxicidad leve | 30m -> 3h -> 1d -> 3d |
+| `Publicidad` | **Helper** | Publicidad no autorizada | 7d -> Permanente |
 
 **Ejemplo de uso:**
 `/tempmute Jugador #Spam`
@@ -38,10 +38,10 @@ Este documento detalla las plantillas de sanción configuradas en el servidor. E
 
 ## Plantillas de Advertencia (Warns)
 
-| ID Plantilla | Razón Automática | Duración Activa |
-| :--- | :--- | :--- |
-| `Advertencia-General` | Incumplimiento de normativas | 7 días |
-| `Mayusculas` | Uso excesivo de mayúsculas | 3 días |
+| ID Plantilla | Rango Mínimo | Razón Automática | Duración Activa |
+| :--- | :--- | :--- | :--- |
+| `Advertencia-General` | **Helper** | Incumplimiento de normativas | 7 días |
+| `Mayusculas` | **Helper** | Uso excesivo de mayúsculas | 3 días |
 
 **Ejemplo de uso:**
 `/warn Jugador #Mayusculas`
