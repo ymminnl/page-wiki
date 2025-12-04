@@ -1,4 +1,4 @@
-site_name: Wiki del Servidor
+site_name: Documentación Oficial
 site_url: https://ymminnl.github.io/page-wiki/
 # repo_url: https://github.com/ymminnl/page-wiki/
 # edit_uri: edit/main/docs/
@@ -6,13 +6,12 @@ site_url: https://ymminnl.github.io/page-wiki/
 theme:
   name: material
   language: es
-  # Logo e icono (puedes cambiarlos luego)
   icon:
     logo: material/book-open-page-variant
   favicon: assets/favicon.png
   
   palette:
-    # Modo Claro (por defecto)
+    # Modo Claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
@@ -46,6 +45,7 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
-  - Rangos y Comandos:
-    - Guía de Helper: guias/helper.md
-    - Guía de Moderador: guias/moderador.md
+  - Manual Operativo:
+    - Protocolo Helper: guias/helper.md
+    - Protocolo Moderador: guias/moderador.md
+    - Códigos de Sanción: guias/plantillas.md

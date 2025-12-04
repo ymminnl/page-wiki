@@ -1,100 +1,59 @@
-# Guía de Rango Helper
+# Protocolo de Actuación: Rango Helper
 
-Bienvenido al equipo. Como **Helper**, tu trabajo principal es asistir a los usuarios, resolver dudas y mantener el orden básico en el chat y el juego.
+## Descripción del Rol
+El rol de Helper tiene como objetivo principal la asistencia a usuarios y la moderación preventiva del chat. Se espera un comportamiento imparcial y profesional en todo momento.
 
 !!! info "Nota Importante"
-    Recuerda siempre tener pruebas (capturas o videos) antes de aplicar una sanción.
+    Toda sanción debe estar respaldada por evidencia gráfica (capturas de pantalla o video).
 
 ---
 
-## 🛡️ Sanciones y Advertencias
+## Procedimientos de Sanción (Advertencias)
 
-Estos comandos se usan para corregir comportamientos leves.
+### Comando: `/warn`
+*   **Sintaxis:** `/warn <jugador> <razón>`
+*   **Descripción:** Emite una advertencia formal registrada en el historial del usuario.
+*   **Aplicación:** Infracciones leves de chat (mayúsculas, spam menor) o comportamiento inadecuado inicial.
 
-### `/warn`
-*   **Uso:** `/warn <jugador> <razón>`
-*   **Descripción:** Envía una advertencia formal al jugador.
-*   **¿Cuándo usarlo?:** Insultos leves, spam, mayúsculas excesivas o faltas de respeto menores.
-*   **Ejemplo:** `/warn Steve Spam excesivo en el chat`
+### Comando: `/kick`
+*   **Sintaxis:** `/kick <jugador> <razón>`
+*   **Descripción:** Desconexión forzada del servidor.
+*   **Aplicación:** Situaciones de bloqueo (bug), AFK excesivo en zonas saturadas o advertencia final ante caso omiso de instrucciones.
 
-### `/kick`
-*   **Uso:** `/kick <jugador> <razón>`
-*   **Descripción:** Expulsa al jugador del servidor (puede volver a entrar inmediatamente).
-*   **¿Cuándo usarlo?:** Cuando un usuario ignora los *warns* o está "bugueado".
-*   **Ejemplo:** `/kick Alex Por favor reloguea para actualizar tu skin`
-
-### `/warnings`
-*   **Uso:** `/warnings <jugador>`
-*   **Descripción:** Muestra el historial de advertencias activas de un usuario.
+### Comando: `/warnings`
+*   **Sintaxis:** `/warnings <jugador>`
+*   **Descripción:** Consulta el historial de advertencias activas.
 
 ---
 
-## 🕵️ Herramientas de Investigación
+## Herramientas de Investigación
 
-Antes de sancionar, debes investigar.
+### Auditoría de Historial
+*   **`/checkban <jugador>`**: Verifica estado de bloqueo actual.
+*   **`/checkmute <jugador>`**: Verifica estado de silencio actual.
+*   **`/history <jugador>`**: Despliega el historial completo de infracciones previas.
 
-### `/checkban`, `/checkmute`, `/checkwarn`
-*   **Uso:** `/checkban <jugador>`
-*   **Descripción:** Verifica si un usuario tiene sanciones activas o pasadas.
-*   **¿Cuándo usarlo?:** Al ver a un usuario sospechoso, revisa si es reincidente.
-
-### `/history`
-*   **Uso:** `/history <jugador>`
-*   **Descripción:** Muestra el historial completo de sanciones (LiteBans).
-
-### `/dupeip` e `/iphistory`
-*   **Uso:** `/dupeip <jugador>`
-*   **Descripción:** Escanea la IP del jugador para ver si tiene otras cuentas (Multicuentas).
-*   **Advertencia:** Algunas veces hermanos comparten IP, no asumas siempre que es la misma persona.
-
-### `/geoip`
-*   **Uso:** `/geoip <jugador>`
-*   **Descripción:** Muestra la ubicación geográfica aproximada (país) de la IP del jugador.
-*   **Caso de uso:** Útil para detectar si una cuenta ha sido robada (ej. un usuario de España conectándose desde Rusia).
+### Análisis de IP y Cuentas
+*   **`/dupeip <jugador>`**: Escanea coincidencias de IP para detectar cuentas alternas (multicuentas).
+*   **`/geoip <jugador>`**: Provee información de geolocalización de la conexión.
+    *   *Uso:* Detección de accesos inusuales o cuentas comprometidas.
 
 ---
 
-## 👁️ Vigilancia y Control
+## Herramientas de Supervisión
 
-Comandos para monitorear la actividad sin ser visto.
+### Modos de Visibilidad
+*   **`/vanish`**: Activa el modo invisible. Es obligatorio su uso durante procesos de monitoreo de sospechosos.
 
-### `/vanish` (o `/v`)
-*   **Uso:** `/vanish`
-*   **Descripción:** Te hace completamente invisible para los usuarios normales.
-*   **¿Cuándo usarlo?:** Siempre que estés moderando o vigilando a un posible hacker.
+### Inspección de Inventarios
+*   **`/invsee <jugador>`**: Visualización del inventario en tiempo real.
+*   **`/enderchest <jugador>`**: Visualización del cofre de ender.
 
-### `/invsee`
-*   **Uso:** `/invsee <jugador>`
-*   **Descripción:** Abre el inventario del jugador en tiempo real.
-*   **Caso de uso:** Verificar si llevan items ilegales o x-ray.
-
-### `/enderchest` (o `/ec`)
-*   **Uso:** `/enderchest <jugador>`
-*   **Descripción:** Permite ver el cofre de ender del jugador.
-
-### `/socialspy`
-*   **Uso:** `/socialspy`
-*   **Descripción:** Te permite leer los mensajes privados (`/msg`) que se envían otros jugadores.
-*   **Nota:** Úsalo con ética profesional.
-
-### `/freeze`
-*   **Uso:** `/freeze <jugador>`
-*   **Descripción:** Congela al jugador para que no pueda moverse.
-*   **Caso de uso:** Fundamental para revisiones (ScreenShare) o para detener a alguien que está rompiendo reglas masivamente.
+### Comunicación Interna
+*   **`/staffchat`**: Canal exclusivo de comunicación del equipo.
+    *   *Protocolo:* Todo reporte interno o duda sobre sanciones debe tratarse por este medio.
 
 ---
 
-## 💬 Chat del Staff
-
-### `/staffchat` (o `/sc`)
-*   **Uso:** `/sc <mensaje>`
-*   **Descripción:** Envía un mensaje visible solo para el resto del staff.
-*   **Importante:** Toda comunicación sobre sanciones o sospechas debe ir por aquí, nunca por el chat público.
-
----
-
-## 🚀 Movimiento
-
-### `/tp`
-*   **Uso:** `/tp <jugador>`
-*   **Descripción:** Te teletransporta a la ubicación del jugador.
+## Movimiento
+*   **`/tp <jugador>`**: Teletransportación directa a la ubicación del usuario.
