@@ -1,72 +1,58 @@
 # Protocolo de Actuación: Rango Moderador
 
 ## Alcance de Autoridad
-Gestión de sanciones graves, seguridad del servidor y administración de usuarios. Incluye todas las competencias del rango Helper.
+Gestión total de sanciones, administración de mundos y usuarios.
+*Nota: El Moderador tiene acceso a todos los comandos de Helper.*
 
 ---
 
-## Protocolo de Bloqueos (Bans)
+## Sanciones Graves (Bans)
 
-El tiempo de sanción es gestionado por el sistema de escalada (Ladder). No especifique tiempos manualmente.
+El sistema de plantillas gestiona la duración. No usar tiempos manuales.
 
-### Aplicación de Sanción
-*   **Comando:** `/ban <jugador> <plantilla>`
-*   **Ejemplo:** `/ban Jugador Hack-General`
+*   **`/ban <jugador> <plantilla>`**: Bloqueo de acceso al servidor.
+*   **`/tempban <jugador> <plantilla>`**: Alias de `/ban`.
+*   **`/unban <jugador>`**: Revocar un bloqueo activo.
+*   **`/banlist`**: Muestra la lista de usuarios bloqueados recientemente.
 
-### Plantillas de Bloqueo
-*   `Hack-General` (Aplica bloqueo de IP)
-*   `XRay`
-*   `Toxicidad-Extrema`
-*   `Acoso`
+## Gestión de Silencios y Advertencias
 
-### Revocación
-*   **Comando:** `/unban <jugador>`
-*   **Requisito:** Justificación obligatoria en registros internos.
-
----
-
-## Protocolo de Silencio y Advertencias (Mutes/Warns)
-
-### Silencios (Mutes)
-*   **Comando:** `/mute <jugador> <plantilla>`
-*   **Ejemplo:** `/mute Jugador Toxicidad-Leve`
-
-### Advertencias (Warns)
-*   **Comando:** `/warn <jugador> <plantilla>`
-*   **Ejemplo:** `/warn Jugador Comportamiento`
+*   **`/mute <jugador> <plantilla>`**: Silenciar usuario.
+*   **`/tempmute <jugador> <plantilla>`**: Alias de `/mute`.
+*   **`/unmute <jugador>`**: Revocar un silencio activo.
+*   **`/warn <jugador> <plantilla>`**: Emitir advertencia.
+*   **`/unwarn <jugador>`**: Eliminar una advertencia específica.
+*   **`/warnings <jugador>`**: Ver lista de advertencias.
 
 ---
 
-## Gestión Administrativa (Exclusivo Mod)
+## Administración de Entorno y Jugador
 
-### Datos y Propiedades
-*   **`/clearinventory <jugador>`**: Eliminación total de inventario.
-*   **`/clearenderchest <jugador>`**: Eliminación de contenido de Ender Chest.
+*   **`/clearinventory <jugador>`**: Borrar inventario completo.
+*   **`/clearenderchest <jugador>`**: Borrar Ender Chest completo.
+*   **`/freeze <jugador>`**: Congelar usuario.
+*   **`/kick <jugador>`**: Expulsar usuario.
 
-### Modos de Juego
-*   **`/fly`**: Modo vuelo.
-*   **`/gmsp`**: Modo espectador.
+## Modos de Juego y Movimiento
 
-### Investigación Avanzada
-*   **`/banlist`**: Listado de bloqueos activos.
+*   **`/fly`**: Activar modo vuelo.
+*   **`/gms`**: Cambiar a modo Supervivencia (Survival).
+*   **`/gmsp`**: Cambiar a modo Espectador.
+*   **`/tphere <jugador>`**: Traer usuario a tu posición.
+*   **`/tp <jugador>`**: Ir a posición de usuario.
+*   **`/mv`**: Comandos de Multiverse (Gestión de mundos).
+
+---
+
+## Investigación y Supervisión (Avanzado)
+
 *   **`/namehistory <jugador>`**: Historial de cambios de nombre (Mojang).
-*   **`/tphere <jugador>`**: Teletransportar usuario a la posición del moderador.
-
----
-
-## Herramientas de Investigación (General)
-
-*   **`/history <jugador>`**: Visualizar historial completo.
-*   **`/checkban <jugador>`**: Verificar estado de bloqueo.
-*   **`/checkmute <jugador>`**: Verificar estado de silencio.
-*   **`/dupeip <jugador>`**: Escaneo de multicuentas por IP.
-*   **`/geoip <jugador>`**: Geolocalización de la conexión.
-
----
-
-## Herramientas de Supervisión (General)
-
+*   **`/dupeip <jugador>`**: Detección de multicuentas.
+*   **`/iphistory <jugador>`**: Historial de IPs.
+*   **`/geoip <jugador>`**: Geolocalización.
+*   **`/history <jugador>`**: Historial completo LiteBans.
+*   **`/socialspy`**: Espionaje de chat privado.
+*   **`/invsee <jugador>`**: Ver inventario.
+*   **`/enderchest <jugador>`**: Ver Ender Chest.
 *   **`/vanish`**: Modo invisible.
-*   **`/invsee <jugador>`**: Inspección de inventario.
-*   **`/staffchat`**: Canal de comunicación interna.
-*   **`/tp <jugador>`**: Teletransportación.
+*   **`/staffchat`** (o `/sc`): Chat interno.
