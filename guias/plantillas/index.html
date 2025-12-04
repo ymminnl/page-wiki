@@ -486,6 +486,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#leyenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Leyenda
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#plantillas-de-bloqueo-bans" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -552,7 +563,13 @@
 
 
 <h1 id="referencia-de-plantillas-templates">Referencia de Plantillas (Templates)</h1>
-<p>Esta sección detalla los códigos de plantilla preconfigurados en el sistema LiteBans. El uso de plantillas garantiza la estandarización de los tiempos y razones de sanción.</p>
+<p>Este documento detalla las plantillas de sanción configuradas en el servidor. El sistema utiliza <strong>escalada automática (Ladders)</strong>: si un usuario reincide en la misma falta dentro del tiempo de expiración, la sanción será automáticamente más severa.</p>
+<h2 id="leyenda">Leyenda</h2>
+<ul>
+<li>🛡️ <strong>IP Ban</strong>: La plantilla bloquea también la dirección IP del usuario.</li>
+<li>🪜 <strong>Escalada</strong>: Tiempo que tarda en "reiniciarse" el nivel de gravedad de la falta.</li>
+</ul>
+<hr />
 <h2 id="plantillas-de-bloqueo-bans">Plantillas de Bloqueo (Bans)</h2>
 <table>
 <thead>
@@ -560,28 +577,39 @@
 <th style="text-align: left;">ID Plantilla</th>
 <th style="text-align: left;">Razón Automática</th>
 <th style="text-align: left;">Escalada (Ladder)</th>
+<th style="text-align: left;">Notas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><code>Hack-General</code></td>
-<td style="text-align: left;">Uso de Cliente Modificado / Ventaja Injusta</td>
+<td style="text-align: left;">Uso de Cliente Modificado</td>
 <td style="text-align: left;">30d -&gt; Permanente</td>
+<td style="text-align: left;">🛡️ <strong>IP Ban activado</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>XRay</code></td>
-<td style="text-align: left;">Uso de X-Ray o Paquetes ilegales</td>
+<td style="text-align: left;">Uso de X-Ray / Texturas</td>
 <td style="text-align: left;">7d -&gt; 14d -&gt; Permanente</td>
+<td style="text-align: left;">No afecta IP</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Toxicidad-Extrema</code></td>
-<td style="text-align: left;">Toxicidad Extrema / Discurso de Odio</td>
+<td style="text-align: left;">Toxicidad Extrema / Odio</td>
 <td style="text-align: left;">7d -&gt; Permanente</td>
+<td style="text-align: left;">Faltas graves de respeto</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Acoso</code></td>
 <td style="text-align: left;">Acoso a usuarios o Staff</td>
 <td style="text-align: left;">5d -&gt; 30d -&gt; Permanente</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Bot-Attack</code></td>
+<td style="text-align: left;">Ataque de Bots</td>
+<td style="text-align: left;"><strong>Permanente</strong></td>
+<td style="text-align: left;">🛡️ Solo Admins</td>
 </tr>
 </tbody>
 </table>
