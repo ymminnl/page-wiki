@@ -17,7 +17,7 @@ La moderación no es solo sancionar, es mantener un buen ambiente.
 *   **Escucha primero:** Antes de sancionar, deja que se expliquen. A veces son malentendidos :/
 *   **Sé justo:** Aplicamos las reglas por igual para todos, sin excepciones.
 
-## Antes de Sancionar (Checklist)
+## Antes de Sancionar
 Antes de usar un comando, revisa estos 3 puntos:
 
 1.  **¿Tengo pruebas?** (Video o captura obligatoria. Sin pruebas no hay sanción).
@@ -25,7 +25,7 @@ Antes de usar un comando, revisa estos 3 puntos:
 3.  **¿Es la plantilla correcta?** Asegúrate de elegir el código adecuado.
 
 ## ¿Cuándo pedir ayuda?
-Es mejor preguntar que equivocarse. Avísanos si:
+Es mejor preguntar que equivocarse:
 
 *   Alguien amenaza con ataques al servidor (DDoS/Bots).
 *   Encontraste un bug grave (dupeos, fallos de seguridad).
