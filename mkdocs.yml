@@ -1,21 +1,20 @@
-site_name: Documentación Oficial
+site_name: Documentación Staff
 site_url: https://ymminnl.github.io/page-wiki/
 
 theme:
   name: material
   language: es
-  # Logo e icono
   icon:
-    logo: material/shield-account
+    logo: material/book-open-page-variant
   favicon: assets/favicon.png
   
-  # Tipografía Moderna (Google Fonts)
+  # Tipografía estándar (Roboto) es la que mejor funciona en móviles
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: Roboto
+    code: Roboto Mono
 
   palette:
-    # Modo Claro
+    # Modo Claro (Blue Grey profesional)
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue grey
@@ -24,7 +23,7 @@ theme:
         icon: material/weather-night
         name: Cambiar a modo oscuro
 
-    # Modo Oscuro (Slate es más elegante que el negro puro)
+    # Modo Oscuro (Slate)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
@@ -36,25 +35,21 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.indexes # Permite que las secciones sean clicables
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
-
-# CSS Personalizado
-extra_css:
-  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list # Necesario para clases CSS en markdown
+  - attr_list
 
 nav:
-  - Portal: index.md
+  - Inicio: index.md
   - Manuales:
-    - Helper: guias/helper.md
-    - Moderador: guias/moderador.md
+    - Protocolo Helper: guias/helper.md
+    - Protocolo Moderador: guias/moderador.md
   - Referencia:
-    - Plantillas: guias/plantillas.md
+    - Códigos de Sanción: guias/plantillas.md
