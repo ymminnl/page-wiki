@@ -563,11 +563,11 @@
 
 
 <h1 id="referencia-de-plantillas-templates">Referencia de Plantillas (Templates)</h1>
-<p>Este documento detalla las plantillas de sanción configuradas en el servidor. El sistema utiliza <strong>escalada automática (Ladders)</strong>: si un usuario reincide en la misma falta dentro del tiempo de expiración, la sanción será automáticamente más severa.</p>
+<p>Este documento detalla las plantillas de sanción configuradas. El sistema utiliza <strong>escalada automática (Ladders)</strong>.</p>
 <h2 id="leyenda">Leyenda</h2>
 <ul>
-<li>🛡️ <strong>IP Ban</strong>: La plantilla bloquea también la dirección IP del usuario.</li>
-<li>🪜 <strong>Escalada</strong>: Tiempo que tarda en "reiniciarse" el nivel de gravedad de la falta.</li>
+<li>🛡️ <strong>IP Ban</strong>: Bloquea también la dirección IP.</li>
+<li>👮 <strong>Rango</strong>: Nivel mínimo de staff requerido para usar esta plantilla.</li>
 </ul>
 <hr />
 <h2 id="plantillas-de-bloqueo-bans">Plantillas de Bloqueo (Bans)</h2>
@@ -575,6 +575,7 @@
 <thead>
 <tr>
 <th style="text-align: left;">ID Plantilla</th>
+<th style="text-align: left;">Rango Mínimo</th>
 <th style="text-align: left;">Razón Automática</th>
 <th style="text-align: left;">Escalada (Ladder)</th>
 <th style="text-align: left;">Notas</th>
@@ -583,33 +584,38 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>Hack-General</code></td>
+<td style="text-align: left;"><strong>Moderador</strong></td>
 <td style="text-align: left;">Uso de Cliente Modificado</td>
 <td style="text-align: left;">30d -&gt; Permanente</td>
-<td style="text-align: left;">🛡️ <strong>IP Ban activado</strong></td>
+<td style="text-align: left;">🛡️ <strong>IP Ban</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>XRay</code></td>
+<td style="text-align: left;"><strong>Moderador</strong></td>
 <td style="text-align: left;">Uso de X-Ray / Texturas</td>
 <td style="text-align: left;">7d -&gt; 14d -&gt; Permanente</td>
-<td style="text-align: left;">No afecta IP</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Toxicidad-Extrema</code></td>
+<td style="text-align: left;"><strong>Moderador</strong></td>
 <td style="text-align: left;">Toxicidad Extrema / Odio</td>
 <td style="text-align: left;">7d -&gt; Permanente</td>
-<td style="text-align: left;">Faltas graves de respeto</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Acoso</code></td>
+<td style="text-align: left;"><strong>Moderador</strong></td>
 <td style="text-align: left;">Acoso a usuarios o Staff</td>
 <td style="text-align: left;">5d -&gt; 30d -&gt; Permanente</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Bot-Attack</code></td>
+<td style="text-align: left;"><strong>ADMIN</strong></td>
 <td style="text-align: left;">Ataque de Bots</td>
 <td style="text-align: left;"><strong>Permanente</strong></td>
-<td style="text-align: left;">🛡️ Solo Admins</td>
+<td style="text-align: left;">🛡️ <strong>IP Ban</strong></td>
 </tr>
 </tbody>
 </table>
@@ -621,6 +627,7 @@
 <thead>
 <tr>
 <th style="text-align: left;">ID Plantilla</th>
+<th style="text-align: left;">Rango Mínimo</th>
 <th style="text-align: left;">Razón Automática</th>
 <th style="text-align: left;">Escalada (Ladder)</th>
 </tr>
@@ -628,16 +635,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>Spam</code></td>
+<td style="text-align: left;"><strong>Helper</strong></td>
 <td style="text-align: left;">Spam / Flood en chat</td>
 <td style="text-align: left;">15m -&gt; 1h -&gt; 6h -&gt; 1d</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Toxicidad-Leve</code></td>
+<td style="text-align: left;"><strong>Helper</strong></td>
 <td style="text-align: left;">Falta de respeto / Toxicidad leve</td>
 <td style="text-align: left;">30m -&gt; 3h -&gt; 1d -&gt; 3d</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Publicidad</code></td>
+<td style="text-align: left;"><strong>Helper</strong></td>
 <td style="text-align: left;">Publicidad no autorizada</td>
 <td style="text-align: left;">7d -&gt; Permanente</td>
 </tr>
@@ -651,6 +661,7 @@
 <thead>
 <tr>
 <th style="text-align: left;">ID Plantilla</th>
+<th style="text-align: left;">Rango Mínimo</th>
 <th style="text-align: left;">Razón Automática</th>
 <th style="text-align: left;">Duración Activa</th>
 </tr>
@@ -658,11 +669,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><code>Advertencia-General</code></td>
+<td style="text-align: left;"><strong>Helper</strong></td>
 <td style="text-align: left;">Incumplimiento de normativas</td>
 <td style="text-align: left;">7 días</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Mayusculas</code></td>
+<td style="text-align: left;"><strong>Helper</strong></td>
 <td style="text-align: left;">Uso excesivo de mayúsculas</td>
 <td style="text-align: left;">3 días</td>
 </tr>
