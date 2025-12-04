@@ -1,5 +1,4 @@
 site_name: Wiki del Servidor
-# IMPORTANTE: Cambia estas URLs por las de tu repositorio real en GitHub
 site_url: https://ymminnl.github.io/page-wiki/
 repo_url: https://github.com/ymminnl/page-wiki/
 edit_uri: edit/main/docs/
@@ -17,6 +16,3 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Guías:
-      # Aquí podrás añadir más páginas en el futuro
-      # - Instalación: guias/instalacion.md
