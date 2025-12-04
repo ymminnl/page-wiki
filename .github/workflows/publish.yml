@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Importante para mkdocs git-revision-date
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -19,7 +19,10 @@ jobs:
 
       - run: pip install mkdocs-material
 
+      - name: Configure Git User
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
