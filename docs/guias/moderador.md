@@ -1,6 +1,4 @@
 # Moderadores
-
-## Autoridad
 Gestión de sanciones graves, seguridad del servidor y administración de usuarios.
 
 ---
