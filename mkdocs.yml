@@ -8,13 +8,12 @@ theme:
     logo: material/book-open-page-variant
   favicon: assets/favicon.png
   
-  # Tipografía estándar (Roboto) es la que mejor funciona en móviles
   font:
     text: Roboto
     code: Roboto Mono
 
   palette:
-    # Modo Claro (Blue Grey profesional)
+    # Modo Claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue grey
@@ -23,7 +22,7 @@ theme:
         icon: material/weather-night
         name: Cambiar a modo oscuro
 
-    # Modo Oscuro (Slate)
+    # Modo Oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
@@ -39,6 +38,14 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+
+# Plugins Activos
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago      # Muestra "Hace 2 horas", "Hace 5 minutos"
+      locale: es         # En español
+      fallback_to_build_date: true # Por si acaso no detecta git
 
 markdown_extensions:
   - admonition
