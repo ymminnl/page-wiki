@@ -7,7 +7,6 @@
     --transition-speed: 0.3s;
 }
 
-/* Limpieza de layout principal */
 .md-content__inner {
     margin: 0 auto;
     max-width: 1000px;
@@ -25,11 +24,11 @@
 .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 8px; /* Radio más serio */
+    border-radius: 8px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alineación izquierda es más formal */
+    align-items: flex-start;
     justify-content: flex-start;
     text-decoration: none !important;
     color: inherit !important;
@@ -51,7 +50,6 @@
     transition: opacity var(--transition-speed);
 }
 
-/* Hover States & Micro-animations */
 .card:hover {
     transform: translateY(-4px);
     box-shadow: var(--card-hover-shadow);
@@ -62,19 +60,28 @@
     opacity: 1;
 }
 
-/* Iconography */
+/* --- CORRECCIÓN DE ICONOS (FIX BUG) --- */
 .card-icon {
-    font-size: 2rem; /* Más discreto */
     margin-bottom: 1.5rem;
     color: var(--md-default-fg-color--light);
     transition: color var(--transition-speed);
+    /* Aseguramos que el contenedor tenga tamaño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Forzamos el tamaño del SVG directamente */
+.card-icon svg {
+    width: 48px !important;
+    height: 48px !important;
+    fill: currentColor;
 }
 
 .card:hover .card-icon {
     color: var(--md-primary-fg-color);
 }
 
-/* Typography Hierarchy */
 .card h3 {
     margin: 0 0 0.5rem 0 !important;
     font-weight: 600;
@@ -89,7 +96,6 @@
     line-height: 1.5;
 }
 
-/* Ocultar encabezado H1 en home */
 .hide-h1 h1 {
     display: none;
 }
