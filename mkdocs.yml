@@ -1,7 +1,7 @@
 site_name: Wiki del Servidor
 site_url: https://ymminnl.github.io/page-wiki/
-repo_url: https://github.com/ymminnl/page-wiki/
-edit_uri: edit/main/docs/
+# repo_url: https://github.com/ymminnl/page-wiki/
+# edit_uri: edit/main/docs/
 
 theme:
   name: material
