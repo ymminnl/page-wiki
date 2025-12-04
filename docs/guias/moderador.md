@@ -11,14 +11,12 @@ Gestión total de sanciones, administración de mundos y usuarios.
 El sistema de plantillas gestiona la duración. No usar tiempos manuales.
 
 *   **`/ban <jugador> <plantilla>`**: Bloqueo de acceso al servidor.
-*   **`/tempban <jugador> <plantilla>`**: Alias de `/ban`.
 *   **`/unban <jugador>`**: Revocar un bloqueo activo.
 *   **`/banlist`**: Muestra la lista de usuarios bloqueados recientemente.
 
 ## Gestión de Silencios y Advertencias
 
 *   **`/mute <jugador> <plantilla>`**: Silenciar usuario.
-*   **`/tempmute <jugador> <plantilla>`**: Alias de `/mute`.
 *   **`/unmute <jugador>`**: Revocar un silencio activo.
 *   **`/warn <jugador> <plantilla>`**: Emitir advertencia.
 *   **`/unwarn <jugador>`**: Eliminar una advertencia específica.
