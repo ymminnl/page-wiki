@@ -1,21 +1,19 @@
 # Protocolo de Actuación: Rango Moderador
 
 ## Alcance de Autoridad
-Gestión de sanciones graves, seguridad del servidor y administración de usuarios.
+Gestión de sanciones graves, seguridad del servidor y administración de usuarios. Incluye todas las competencias del rango Helper.
 
 ---
 
 ## Protocolo de Bloqueos (Bans)
 
-El tiempo de sanción es gestionado por el sistema de escalada (Ladder). No se deben especificar duraciones manualmente.
+El tiempo de sanción es gestionado por el sistema de escalada (Ladder). No especifique tiempos manualmente.
 
 ### Aplicación de Sanción
-*   **Comando:** `/tempban <jugador> <plantilla>`
-*   **Ejemplo:** `/tempban Jugador Hack-General`
+*   **Comando:** `/ban <jugador> <plantilla>`
+*   **Ejemplo:** `/ban Jugador Hack-General`
 
-Las plantillas definen automáticamente si el bloqueo es temporal o permanente basándose en el historial del usuario.
-
-### Plantillas de Moderación
+### Plantillas de Bloqueo
 *   `Hack-General` (Aplica bloqueo de IP)
 *   `XRay`
 *   `Toxicidad-Extrema`
@@ -27,14 +25,19 @@ Las plantillas definen automáticamente si el bloqueo es temporal o permanente b
 
 ---
 
-## Protocolo de Silencio (Mutes)
+## Protocolo de Silencio y Advertencias (Mutes/Warns)
 
-*   **Comando:** `/tempmute <jugador> <plantilla>`
-*   **Ejemplo:** `/tempmute Jugador Toxicidad-Leve`
+### Silencios (Mutes)
+*   **Comando:** `/mute <jugador> <plantilla>`
+*   **Ejemplo:** `/mute Jugador Toxicidad-Leve`
+
+### Advertencias (Warns)
+*   **Comando:** `/warn <jugador> <plantilla>`
+*   **Ejemplo:** `/warn Jugador Comportamiento`
 
 ---
 
-## Gestión Administrativa
+## Gestión Administrativa (Exclusivo Mod)
 
 ### Datos y Propiedades
 *   **`/clearinventory <jugador>`**: Eliminación total de inventario.
@@ -48,3 +51,22 @@ Las plantillas definen automáticamente si el bloqueo es temporal o permanente b
 *   **`/banlist`**: Listado de bloqueos activos.
 *   **`/namehistory <jugador>`**: Historial de cambios de nombre (Mojang).
 *   **`/tphere <jugador>`**: Teletransportar usuario a la posición del moderador.
+
+---
+
+## Herramientas de Investigación (General)
+
+*   **`/history <jugador>`**: Visualizar historial completo.
+*   **`/checkban <jugador>`**: Verificar estado de bloqueo.
+*   **`/checkmute <jugador>`**: Verificar estado de silencio.
+*   **`/dupeip <jugador>`**: Escaneo de multicuentas por IP.
+*   **`/geoip <jugador>`**: Geolocalización de la conexión.
+
+---
+
+## Herramientas de Supervisión (General)
+
+*   **`/vanish`**: Modo invisible.
+*   **`/invsee <jugador>`**: Inspección de inventario.
+*   **`/staffchat`**: Canal de comunicación interna.
+*   **`/tp <jugador>`**: Teletransportación.

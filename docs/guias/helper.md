@@ -7,7 +7,7 @@ Asistencia a usuarios y moderación preventiva del chat.
 
 ## Sistema de Sanciones Automatizado
 
-El servidor utiliza un sistema de plantillas predefinidas. Es obligatorio utilizar el identificador de la plantilla en lugar de escribir razones manuales.
+Es obligatorio utilizar el identificador de la plantilla en lugar de escribir razones manuales.
 
 ### Advertencias
 Emite una advertencia registrada en el historial.
@@ -16,10 +16,10 @@ Emite una advertencia registrada en el historial.
 *   **Ejemplo:** `/warn Jugador Mayusculas`
 
 ### Silencios (Mutes)
-Aplica un silencio temporal. La duración es calculada automáticamente por el sistema según la reincidencia.
+Aplica un silencio. La duración es calculada automáticamente por la plantilla.
 
-*   **Comando:** `/tempmute <jugador> <plantilla>`
-*   **Ejemplo:** `/tempmute Jugador Spam`
+*   **Comando:** `/mute <jugador> <plantilla>`
+*   **Ejemplo:** `/mute Jugador Spam`
 
 ### Lista de Plantillas Disponibles
 *   `Mayusculas`
