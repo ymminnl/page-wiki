@@ -3,8 +3,8 @@
 Este documento detalla las plantillas de sanción configuradas. El sistema utiliza **escalada automática (Ladders)**.
 
 ## Leyenda
-*   🛡️ **IP Ban**: Bloquea también la dirección IP.
-*   👮 **Rango**: Nivel mínimo de staff requerido para usar esta plantilla.
+*   **IP Ban**: Bloquea también la dirección IP.
+*   **Rango**: Nivel mínimo de staff requerido para usar esta plantilla.
 
 ---
 
@@ -12,11 +12,11 @@ Este documento detalla las plantillas de sanción configuradas. El sistema utili
 
 | ID Plantilla | Rango Mínimo | Razón Automática | Escalada (Ladder) | Notas |
 | :--- | :--- | :--- | :--- | :--- |
-| `Hack-General` | **Moderador** | Uso de Cliente Modificado | 30d -> Permanente | 🛡️ **IP Ban** |
+| `Hack-General` | **Moderador** | Uso de Cliente Modificado | 30d -> Permanente | IP Ban |
 | `XRay` | **Moderador** | Uso de X-Ray / Texturas | 7d -> 14d -> Permanente | |
 | `Toxicidad-Extrema` | **Moderador** | Toxicidad Extrema / Odio | 7d -> Permanente | |
 | `Acoso` | **Moderador** | Acoso a usuarios o Staff | 5d -> 30d -> Permanente | |
-| `Bot-Attack` | **ADMIN** | Ataque de Bots | **Permanente** | 🛡️ **IP Ban** |
+| `Bot-Attack` | **ADMIN** | Ataque de Bots | **Permanente** | IP Ban |
 
 **Ejemplo de uso:**
 `/tempban Jugador #Hack-General`

@@ -10,17 +10,17 @@ El rol de Helper tiene como objetivo principal la asistencia a usuarios y la mod
 
 ## Procedimientos de Sanción (Advertencias)
 
-### Comando: `/warn`
+### Comando: /warn
 *   **Sintaxis:** `/warn <jugador> <razón>`
 *   **Descripción:** Emite una advertencia formal registrada en el historial del usuario.
 *   **Aplicación:** Infracciones leves de chat (mayúsculas, spam menor) o comportamiento inadecuado inicial.
 
-### Comando: `/kick`
+### Comando: /kick
 *   **Sintaxis:** `/kick <jugador> <razón>`
 *   **Descripción:** Desconexión forzada del servidor.
 *   **Aplicación:** Situaciones de bloqueo (bug), AFK excesivo en zonas saturadas o advertencia final ante caso omiso de instrucciones.
 
-### Comando: `/warnings`
+### Comando: /warnings
 *   **Sintaxis:** `/warnings <jugador>`
 *   **Descripción:** Consulta el historial de advertencias activas.
 
