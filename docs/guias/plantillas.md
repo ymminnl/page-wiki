@@ -1,6 +1,6 @@
 # Plantillas
 
-Códigos de sanción del sistema LiteBans.
+Códigos de sanción del sistema
 
 ## Bans (Bloqueos)
 
