@@ -6,13 +6,43 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: es
+  # Logo e icono (puedes cambiarlos luego)
+  icon:
+    logo: material/book-open-page-variant
+  favicon: assets/favicon.png
+  
   palette:
-    primary: deep purple
-    accent: indigo
+    # Modo Claro (por defecto)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+
+    # Modo Oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
   features:
     - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
     - search.suggest
     - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
   - Inicio: index.md
