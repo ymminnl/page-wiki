@@ -501,10 +501,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sintaxis-unica" class="md-nav__link">
+  <a href="#aplicacion-de-sancion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sintaxis Única
+        Aplicación de Sanción
       
     </span>
   </a>
@@ -562,10 +562,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#inventarios-y-datos" class="md-nav__link">
+  <a href="#datos-y-propiedades" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inventarios y Datos
+        Datos y Propiedades
       
     </span>
   </a>
@@ -752,10 +752,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sintaxis-unica" class="md-nav__link">
+  <a href="#aplicacion-de-sancion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sintaxis Única
+        Aplicación de Sanción
       
     </span>
   </a>
@@ -813,10 +813,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#inventarios-y-datos" class="md-nav__link">
+  <a href="#datos-y-propiedades" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inventarios y Datos
+        Datos y Propiedades
       
     </span>
   </a>
@@ -869,25 +869,19 @@
 
 <h1 id="protocolo-de-actuacion-rango-moderador">Protocolo de Actuación: Rango Moderador</h1>
 <h2 id="alcance-de-autoridad">Alcance de Autoridad</h2>
-<p>Gestión de sanciones graves y seguridad del servidor.</p>
-<div class="admonition danger">
-<p class="admonition-title">IMPORTANTE: Sistema de Escalada (Ladders)</p>
-<p><strong>NUNCA</strong> especifiques el tiempo de un baneo manualmente (ej: <code>7d</code>).
-Usa solo el <strong>Nombre de la Plantilla</strong>. El sistema calculará automáticamente si corresponde un baneo temporal o permanente basándose en el historial del jugador.</p>
-</div>
+<p>Gestión de sanciones graves, seguridad del servidor y administración de usuarios.</p>
 <hr />
 <h2 id="protocolo-de-bloqueos-bans">Protocolo de Bloqueos (Bans)</h2>
-<p>Para aplicar un baneo, usa el comando <code>/tempban</code> seguido de la plantilla. No te preocupes por la duración, la plantilla la define.</p>
-<h3 id="sintaxis-unica">Sintaxis Única</h3>
+<p>El tiempo de sanción es gestionado por el sistema de escalada (Ladder). No se deben especificar duraciones manualmente.</p>
+<h3 id="aplicacion-de-sancion">Aplicación de Sanción</h3>
 <ul>
-<li><strong>Comando:</strong> <code>/tempban &lt;jugador&gt; &lt;Plantilla&gt;</code></li>
-<li><strong>✅ Correcto:</strong> <code>/tempban Hacker123 Hack-General</code></li>
-<li><strong>❌ Incorrecto:</strong> <code>/tempban Hacker123 30d Uso de hacks</code></li>
+<li><strong>Comando:</strong> <code>/tempban &lt;jugador&gt; &lt;plantilla&gt;</code></li>
+<li><strong>Ejemplo:</strong> <code>/tempban Jugador Hack-General</code></li>
 </ul>
+<p>Las plantillas definen automáticamente si el bloqueo es temporal o permanente basándose en el historial del usuario.</p>
 <h3 id="plantillas-de-moderacion">Plantillas de Moderación</h3>
-<p>Consulta la sección <a href="../plantillas/">Códigos de Sanción</a> para la lista completa.</p>
 <ul>
-<li><code>Hack-General</code> (Aplica IP Ban automáticamente)</li>
+<li><code>Hack-General</code> (Aplica bloqueo de IP)</li>
 <li><code>XRay</code></li>
 <li><code>Toxicidad-Extrema</code></li>
 <li><code>Acoso</code></li>
@@ -895,32 +889,31 @@ Usa solo el <strong>Nombre de la Plantilla</strong>. El sistema calculará autom
 <h3 id="revocacion">Revocación</h3>
 <ul>
 <li><strong>Comando:</strong> <code>/unban &lt;jugador&gt;</code></li>
-<li><strong>Nota:</strong> Requiere justificación obligatoria en el StaffChat o Discord.</li>
+<li><strong>Requisito:</strong> Justificación obligatoria en registros internos.</li>
 </ul>
 <hr />
 <h2 id="protocolo-de-silencio-mutes">Protocolo de Silencio (Mutes)</h2>
-<p>Al igual que los bans, usa plantillas para que el castigo aumente si el usuario repite la falta.</p>
 <ul>
-<li><strong>Comando:</strong> <code>/tempmute &lt;jugador&gt; &lt;Plantilla&gt;</code></li>
-<li><strong>Ejemplo:</strong> <code>/tempmute Toxico777 Toxicidad-Leve</code></li>
+<li><strong>Comando:</strong> <code>/tempmute &lt;jugador&gt; &lt;plantilla&gt;</code></li>
+<li><strong>Ejemplo:</strong> <code>/tempmute Jugador Toxicidad-Leve</code></li>
 </ul>
 <hr />
 <h2 id="gestion-administrativa">Gestión Administrativa</h2>
-<h3 id="inventarios-y-datos">Inventarios y Datos</h3>
+<h3 id="datos-y-propiedades">Datos y Propiedades</h3>
 <ul>
-<li><strong><code>/clearinventory &lt;jugador&gt;</code></strong>: Borrado total de inventario (Irreversible).</li>
-<li><strong><code>/clearenderchest &lt;jugador&gt;</code></strong>: Borrado de Ender Chest.</li>
+<li><strong><code>/clearinventory &lt;jugador&gt;</code></strong>: Eliminación total de inventario.</li>
+<li><strong><code>/clearenderchest &lt;jugador&gt;</code></strong>: Eliminación de contenido de Ender Chest.</li>
 </ul>
 <h3 id="modos-de-juego">Modos de Juego</h3>
 <ul>
 <li><strong><code>/fly</code></strong>: Modo vuelo.</li>
-<li><strong><code>/gmsp</code></strong>: Modo espectador (Ghost).</li>
+<li><strong><code>/gmsp</code></strong>: Modo espectador.</li>
 </ul>
 <h3 id="investigacion-avanzada">Investigación Avanzada</h3>
 <ul>
-<li><strong><code>/banlist</code></strong>: Lista de baneados activos.</li>
-<li><strong><code>/namehistory &lt;jugador&gt;</code></strong>: Detectar evasión por cambio de nombre.</li>
-<li><strong><code>/tphere &lt;jugador&gt;</code></strong>: Traer jugador a tu posición (Interrogatorios).</li>
+<li><strong><code>/banlist</code></strong>: Listado de bloqueos activos.</li>
+<li><strong><code>/namehistory &lt;jugador&gt;</code></strong>: Historial de cambios de nombre (Mojang).</li>
+<li><strong><code>/tphere &lt;jugador&gt;</code></strong>: Teletransportar usuario a la posición del moderador.</li>
 </ul>
 
 
