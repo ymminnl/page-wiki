@@ -1,58 +1,57 @@
 # Protocolo de Actuación: Rango Moderador
 
 ## Alcance de Autoridad
-El Moderador posee permisos elevados para la gestión de sanciones graves y administración de la integridad del servidor. Este rango incluye todas las competencias del rango Helper.
+Gestión de sanciones graves y seguridad del servidor.
 
-!!! warning "Advertencia"
-    El uso incorrecto de las herramientas de bloqueo (ban) puede resultar en la revocación de permisos. Siga estrictamente la tabla de tiempos estipulada.
+!!! danger "IMPORTANTE: Sistema de Escalada (Ladders)"
+    **NUNCA** especifiques el tiempo de un baneo manualmente (ej: `7d`).
+    Usa solo el **Nombre de la Plantilla**. El sistema calculará automáticamente si corresponde un baneo temporal o permanente basándose en el historial del jugador.
 
 ---
 
 ## Protocolo de Bloqueos (Bans)
 
-### Bloqueo Temporal
-*   **Comando:** `/tempban <jugador> <tiempo> <razón>`
-*   **Sintaxis de Tiempo:** `m` (minutos), `h` (horas), `d` (días). Ej: `12h`.
-*   **Aplicación:** Infracciones medias (Hacks confirmados primera ofensa, toxicidad reiterada).
+Para aplicar un baneo, usa el comando `/tempban` seguido de la plantilla. No te preocupes por la duración, la plantilla la define.
 
-### Bloqueo Permanente
-*   **Comando:** `/ban <jugador> <razón>`
-*   **Aplicación:** Infracciones críticas (Ataques al servidor, duplicación de ítems, reincidencia de hacks).
+### Sintaxis Única
+*   **Comando:** `/tempban <jugador> <Plantilla>`
+*   **✅ Correcto:** `/tempban Hacker123 Hack-General`
+*   **❌ Incorrecto:** `/tempban Hacker123 30d Uso de hacks`
+
+### Plantillas de Moderación
+Consulta la sección [Códigos de Sanción](../guias/plantillas.md) para la lista completa.
+
+*   `Hack-General` (Aplica IP Ban automáticamente)
+*   `XRay`
+*   `Toxicidad-Extrema`
+*   `Acoso`
 
 ### Revocación
 *   **Comando:** `/unban <jugador>`
-*   **Nota:** Requiere justificación en los logs internos.
+*   **Nota:** Requiere justificación obligatoria en el StaffChat o Discord.
 
 ---
 
 ## Protocolo de Silencio (Mutes)
 
-### Silencio Temporal
-*   **Comando:** `/tempmute <jugador> <tiempo> <razón>`
-*   **Aplicación:** Infracciones de chat reiteradas o graves.
+Al igual que los bans, usa plantillas para que el castigo aumente si el usuario repite la falta.
 
-### Silencio Permanente
-*   **Comando:** `/mute <jugador> <razón>`
-*   **Aplicación:** Spam masivo de bots o publicidad no autorizada.
+*   **Comando:** `/tempmute <jugador> <Plantilla>`
+*   **Ejemplo:** `/tempmute Toxico777 Toxicidad-Leve`
 
 ---
 
 ## Gestión Administrativa
 
 ### Inventarios y Datos
-*   **`/clearinventory <jugador>`**: Eliminación total del inventario. Acción irreversible.
-*   **`/clearenderchest <jugador>`**: Eliminación del contenido del cofre de ender.
+*   **`/clearinventory <jugador>`**: Borrado total de inventario (Irreversible).
+*   **`/clearenderchest <jugador>`**: Borrado de Ender Chest.
 
-### Modos de Juego y Vuelo
-*   **`/fly`**: Habilita el modo vuelo para facilitar la supervisión aérea.
-*   **`/gamemode spectator`** (`/gmsp`): Modo espectador para atravesar estructuras y observar sin interferir en las mecánicas de juego.
+### Modos de Juego
+*   **`/fly`**: Modo vuelo.
+*   **`/gmsp`**: Modo espectador (Ghost).
 
-### Registros Avanzados
-*   **`/banlist`**: Listado de usuarios bloqueados activos.
-*   **`/namehistory <jugador>`**: Historial de cambios de nombre de usuario (Mojang). Útil para identificar evasión de identidad.
-
----
-
-## Movimiento Avanzado
-*   **`/tphere <jugador>`**: Teletransporta al usuario a la posición del moderador.
-    *   *Uso:* Interrogatorios o traslado a zonas de soporte.
+### Investigación Avanzada
+*   **`/banlist`**: Lista de baneados activos.
+*   **`/namehistory <jugador>`**: Detectar evasión por cambio de nombre.
+*   **`/tphere <jugador>`**: Traer jugador a tu posición (Interrogatorios).

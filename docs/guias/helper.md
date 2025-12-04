@@ -1,59 +1,54 @@
 # Protocolo de Actuación: Rango Helper
 
 ## Descripción del Rol
-El rol de Helper tiene como objetivo principal la asistencia a usuarios y la moderación preventiva del chat. Se espera un comportamiento imparcial y profesional en todo momento.
+El rol de Helper tiene como objetivo principal la asistencia a usuarios y la moderación preventiva del chat.
 
-!!! info "Nota Importante"
-    Toda sanción debe estar respaldada por evidencia gráfica (capturas de pantalla o video).
+!!! failure "Prohibido Sanciones Manuales"
+    **NO** escribas razones o tiempos manualmente. Debes usar siempre los **Códigos de Plantilla** para que el sistema registre correctamente la infracción.
 
 ---
 
-## Procedimientos de Sanción (Advertencias)
+## Procedimientos de Sanción
 
-### Comando: /warn
-*   **Sintaxis:** `/warn <jugador> <razón>`
-*   **Descripción:** Emite una advertencia formal registrada en el historial del usuario.
-*   **Aplicación:** Infracciones leves de chat (mayúsculas, spam menor) o comportamiento inadecuado inicial.
+### Advertencias (`/warn`)
+El comando de advertencia debe usarse siempre con una plantilla para asegurar uniformidad.
 
-### Comando: /kick
-*   **Sintaxis:** `/kick <jugador> <razón>`
-*   **Descripción:** Desconexión forzada del servidor.
-*   **Aplicación:** Situaciones de bloqueo (bug), AFK excesivo en zonas saturadas o advertencia final ante caso omiso de instrucciones.
+*   **Sintaxis Correcta:** `/warn <jugador> <Plantilla>`
+*   **❌ Incorrecto:** `/warn Steve deja de hacer spam`
+*   **✅ Correcto:** `/warn Steve Mayusculas`
+    *(El sistema pondrá automáticamente la razón y duración)*.
 
-### Comando: /warnings
-*   **Sintaxis:** `/warnings <jugador>`
-*   **Descripción:** Consulta el historial de advertencias activas.
+### Silencios (`/tempmute`)
+Para casos de spam o toxicidad rápida.
+
+*   **Sintaxis Correcta:** `/tempmute <jugador> <Plantilla>`
+*   **Ejemplo:** `/tempmute Steve Spam`
+    *(Si es la primera vez, le dará 15m. Si es la quinta, le dará 30 días automáticamente).*
+
+### Listado de Plantillas Comunes (Helper)
+*   `Mayusculas`
+*   `Advertencia-General`
+*   `Spam`
+*   `Toxicidad-Leve`
+*   `Publicidad`
 
 ---
 
 ## Herramientas de Investigación
 
-### Auditoría de Historial
-*   **`/checkban <jugador>`**: Verifica estado de bloqueo actual.
-*   **`/checkmute <jugador>`**: Verifica estado de silencio actual.
-*   **`/history <jugador>`**: Despliega el historial completo de infracciones previas.
+### Auditoría
+*   **`/history <jugador>`**: Muestra el historial. Fundamental revisar esto antes de sancionar para ver si es reincidente.
+*   **`/checkban <jugador>`** / **`/checkmute <jugador>`**: Verificar estado actual.
 
-### Análisis de IP y Cuentas
-*   **`/dupeip <jugador>`**: Escanea coincidencias de IP para detectar cuentas alternas (multicuentas).
-*   **`/geoip <jugador>`**: Provee información de geolocalización de la conexión.
-    *   *Uso:* Detección de accesos inusuales o cuentas comprometidas.
+### Análisis de IP
+*   **`/dupeip <jugador>`**: Revisa si el jugador tiene otras cuentas.
+*   **`/geoip <jugador>`**: Ubicación de conexión.
 
 ---
 
 ## Herramientas de Supervisión
 
-### Modos de Visibilidad
-*   **`/vanish`**: Activa el modo invisible. Es obligatorio su uso durante procesos de monitoreo de sospechosos.
-
-### Inspección de Inventarios
-*   **`/invsee <jugador>`**: Visualización del inventario en tiempo real.
-*   **`/enderchest <jugador>`**: Visualización del cofre de ender.
-
-### Comunicación Interna
-*   **`/staffchat`**: Canal exclusivo de comunicación del equipo.
-    *   *Protocolo:* Todo reporte interno o duda sobre sanciones debe tratarse por este medio.
-
----
-
-## Movimiento
-*   **`/tp <jugador>`**: Teletransportación directa a la ubicación del usuario.
+*   **`/vanish`**: Modo invisible obligatorio para espectar.
+*   **`/invsee <jugador>`**: Ver inventario.
+*   **`/staffchat`**: Comunicación interna.
+*   **`/tp <jugador>`**: Teletransporte.
