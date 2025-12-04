@@ -10,8 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Importante para mkdocs git-revision-date
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
