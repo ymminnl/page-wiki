@@ -46,3 +46,6 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
+  - Rangos y Comandos:
+    - Guía de Helper: guias/helper.md
+    - Guía de Moderador: guias/moderador.md
