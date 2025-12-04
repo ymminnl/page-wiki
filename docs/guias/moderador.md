@@ -1,56 +1,60 @@
-# Protocolo de Actuación: Rango Moderador
+# Moderadores
 
-## Alcance de Autoridad
-Gestión total de sanciones, administración de mundos y usuarios.
-*Nota: El Moderador tiene acceso a todos los comandos de Helper.*
-
----
-
-## Sanciones Graves (Bans)
-
-El sistema de plantillas gestiona la duración. No usar tiempos manuales.
-
-*   **`/ban <jugador> <plantilla>`**: Bloqueo de acceso al servidor.
-*   **`/unban <jugador>`**: Revocar un bloqueo activo.
-*   **`/banlist`**: Muestra la lista de usuarios bloqueados recientemente.
-
-## Gestión de Silencios y Advertencias
-
-*   **`/mute <jugador> <plantilla>`**: Silenciar usuario.
-*   **`/unmute <jugador>`**: Revocar un silencio activo.
-*   **`/warn <jugador> <plantilla>`**: Emitir advertencia.
-*   **`/unwarn <jugador>`**: Eliminar una advertencia específica.
-*   **`/warnings <jugador>`**: Ver lista de advertencias.
+## Autoridad
+Gestión de sanciones graves y administración. Incluye comandos de Helper.
 
 ---
 
-## Administración de Entorno y Jugador
+## Bans (Bloqueos)
 
-*   **`/clearinventory <jugador>`**: Borrar inventario completo.
-*   **`/clearenderchest <jugador>`**: Borrar Ender Chest completo.
-*   **`/freeze <jugador>`**: Congelar usuario.
-*   **`/kick <jugador>`**: Expulsar usuario.
+*   **`/ban <jugador> <plantilla>`**: Bloquear acceso.
+*   **`/unban <jugador>`**: Revocar bloqueo.
+*   **`/banlist`**: Lista de baneados.
 
-## Modos de Juego y Movimiento
-
-*   **`/fly`**: Activar modo vuelo.
-*   **`/gms`**: Cambiar a modo Supervivencia (Survival).
-*   **`/gmsp`**: Cambiar a modo Espectador.
-*   **`/tphere <jugador>`**: Traer usuario a tu posición.
-*   **`/tp <jugador>`**: Ir a posición de usuario.
-*   **`/mv`**: Comandos de Multiverse (Gestión de mundos).
+### Plantillas Mod
+*   `Hack-General` (IP Ban)
+*   `XRay`
+*   `Toxicidad-Extrema`
+*   `Acoso`
 
 ---
 
-## Investigación y Supervisión (Avanzado)
+## Mutes y Warns
 
-*   **`/namehistory <jugador>`**: Historial de cambios de nombre (Mojang).
-*   **`/dupeip <jugador>`**: Detección de multicuentas.
-*   **`/iphistory <jugador>`**: Historial de IPs.
+*   **`/mute <jugador> <plantilla>`**: Silenciar.
+*   **`/unmute <jugador>`**: Revocar silencio.
+*   **`/warn <jugador> <plantilla>`**: Advertir.
+*   **`/unwarn <jugador>`**: Revocar advertencia.
+*   **`/warnings <jugador>`**: Ver advertencias.
+
+---
+
+## Administración
+
+*   **`/clearinventory <jugador>`**: Borrar inventario.
+*   **`/clearenderchest <jugador>`**: Borrar Ender Chest.
+*   **`/freeze <jugador>`**: Congelar.
+*   **`/kick <jugador>`**: Expulsar.
+
+## Modos de Juego
+
+*   **`/fly`**: Vuelo.
+*   **`/gms`**: Survival.
+*   **`/gmsp`**: Espectador.
+*   **`/tphere <jugador>`**: Traer jugador.
+*   **`/tp <jugador>`**: Ir a jugador.
+*   **`/mv`**: Mundos.
+
+---
+
+## Investigación Avanzada
+
+*   **`/namehistory <jugador>`**: Historial nombres.
+*   **`/dupeip <jugador>`**: Multicuentas.
+*   **`/iphistory <jugador>`**: Historial IPs.
 *   **`/geoip <jugador>`**: Geolocalización.
-*   **`/history <jugador>`**: Historial completo LiteBans.
-*   **`/socialspy`**: Espionaje de chat privado.
-*   **`/invsee <jugador>`**: Ver inventario.
-*   **`/enderchest <jugador>`**: Ver Ender Chest.
-*   **`/vanish`**: Modo invisible.
-*   **`/staffchat`** (o `/sc`): Chat interno.
+*   **`/history <jugador>`**: Historial completo.
+*   **`/socialspy`**: Espionaje chat.
+*   **`/invsee`** / **`/enderchest`**: Inspección.
+*   **`/vanish`**: Invisible.
+*   **`/staffchat`**: Chat interno.

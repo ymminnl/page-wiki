@@ -1,32 +1,32 @@
-# Referencia de Plantillas (Templates)
+# Plantillas
 
-Listado técnico de códigos de sanción configurados en el sistema LiteBans.
+Códigos de sanción del sistema LiteBans.
 
-## Plantillas de Bloqueo (Bans)
+## Bans (Bloqueos)
 
-| ID Plantilla | Rango Mínimo | Escalada (Ladder) | Notas Técnicas |
+| ID | Rango | Escalada | Notas |
 | :--- | :--- | :--- | :--- |
-| `Hack-General` | Moderador | 30d -> Permanente | IP Ban Activado |
-| `XRay` | Moderador | 7d -> 14d -> Permanente | |
-| `Toxicidad-Extrema` | Moderador | 7d -> Permanente | |
-| `Acoso` | Moderador | 5d -> 30d -> Permanente | |
-| `Bot-Attack` | ADMIN | Permanente | IP Ban Activado |
+| `Hack-General` | Mod | 30d -> Perm | IP Ban |
+| `XRay` | Mod | 7d -> Perm | |
+| `Toxicidad-Extrema` | Mod | 7d -> Perm | |
+| `Acoso` | Mod | 5d -> Perm | |
+| `Bot-Attack` | Admin | Perm | IP Ban |
 
 ---
 
-## Plantillas de Silencio (Mutes)
+## Mutes (Silencios)
 
-| ID Plantilla | Rango Mínimo | Escalada (Ladder) |
+| ID | Rango | Escalada |
 | :--- | :--- | :--- |
-| `Spam` | Helper | 15m -> 1h -> 6h -> 1d |
-| `Toxicidad-Leve` | Helper | 30m -> 3h -> 1d -> 3d |
-| `Publicidad` | Helper | 7d -> Permanente |
+| `Spam` | Helper | 15m -> 1d |
+| `Toxicidad-Leve` | Helper | 30m -> 3d |
+| `Publicidad` | Helper | 7d -> Perm |
 
 ---
 
-## Plantillas de Advertencia (Warns)
+## Warns (Advertencias)
 
-| ID Plantilla | Rango Mínimo | Duración Activa |
+| ID | Rango | Duración |
 | :--- | :--- | :--- |
 | `Advertencia-General` | Helper | 7 días |
 | `Mayusculas` | Helper | 3 días |

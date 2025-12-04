@@ -1,43 +1,50 @@
-# Protocolo de Actuación: Rango Helper
+# Helpers
 
-## Descripción del Rol
-Asistencia a usuarios y moderación preventiva del chat.
-
----
-
-## Gestión de Sanciones y Usuarios
-
-*   **`/warn <jugador> <plantilla>`**: Emite una advertencia registrada.
-*   **`/kick <jugador> <razón>`**: Expulsa a un jugador del servidor (Desconexión forzada).
-*   **`/mute <jugador> <plantilla>`**: Aplica silencio temporal (usar plantilla).
-*   **`/freeze <jugador>`**: Inmoviliza a un jugador para revisión o chat.
-*   **`/warnings <jugador>`**: Muestra la lista activa de advertencias de un usuario.
-*   **`/checkwarn <jugador>`**: Verifica el estado de advertencias específico.
+## Descripción
+Asistencia a usuarios y moderación preventiva.
 
 ---
 
-## Herramientas de Investigación e Historial
+## Gestión de Sanciones
 
-*   **`/history <jugador>`**: Historial completo de sanciones.
-*   **`/checkban <jugador>`**: Verificar si un usuario está baneado.
-*   **`/checkmute <jugador>`**: Verificar si un usuario está silenciado.
-*   **`/dupeip <jugador>`**: Escaneo de cuentas coincidentes por IP (Multicuentas).
-*   **`/iphistory <jugador>`**: Historial de direcciones IP usadas por el usuario.
-*   **`/geoip <jugador>`**: Geolocalización de la conexión.
-*   **`/litebans help`**: Muestra ayuda del sistema de sanciones.
+*   **`/warn <jugador> <plantilla>`**: Advertencia.
+*   **`/kick <jugador> <razón>`**: Expulsión.
+*   **`/mute <jugador> <plantilla>`**: Silencio temporal.
+*   **`/freeze <jugador>`**: Inmovilizar.
+*   **`/warnings <jugador>`**: Ver advertencias.
+*   **`/checkwarn <jugador>`**: Estado de warn.
+
+### Plantillas Comunes
+*   `Mayusculas`
+*   `Advertencia-General`
+*   `Spam`
+*   `Toxicidad-Leve`
+*   `Publicidad`
 
 ---
 
-## Herramientas de Supervisión y Chat
+## Investigación
 
-*   **`/vanish`**: Activa modo invisible.
-*   **`/socialspy`**: Permite leer mensajes privados (`/msg`) de otros usuarios.
-*   **`/staffchat`** (o `/sc`): Canal de chat exclusivo del staff.
-*   **`/invsee <jugador>`**: Abrir y ver inventario de un usuario.
-*   **`/enderchest <jugador>`**: Abrir y ver cofre de ender de un usuario.
+*   **`/history <jugador>`**: Historial de sanciones.
+*   **`/checkban <jugador>`**: Estado ban.
+*   **`/checkmute <jugador>`**: Estado mute.
+*   **`/dupeip <jugador>`**: Multicuentas.
+*   **`/iphistory <jugador>`**: Historial IPs.
+*   **`/geoip <jugador>`**: Ubicación.
+*   **`/litebans help`**: Ayuda general.
+
+---
+
+## Supervisión
+
+*   **`/vanish`**: Invisible.
+*   **`/socialspy`**: Chat privado.
+*   **`/staffchat`**: Chat staff.
+*   **`/invsee <jugador>`**: Ver inventario.
+*   **`/enderchest <jugador>`**: Ver Ender Chest.
 
 ---
 
 ## Movimiento
 
-*   **`/tp <jugador>`**: Teletransportarse a la ubicación de un jugador.
+*   **`/tp <jugador>`**: Teletransporte.
