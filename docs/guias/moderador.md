@@ -1,7 +1,7 @@
 # Moderadores
 
 ## Autoridad
-Gestión de sanciones graves, seguridad del servidor y administración de usuarios. Incluye todas las competencias del rango Helper.
+Gestión de sanciones graves, seguridad del servidor y administración de usuarios.
 
 ---
 
@@ -13,7 +13,7 @@ Gestión de sanciones graves, seguridad del servidor y administración de usuari
 
 ### Plantillas de Moderación
 Puedes ver la lista completa y sus códigos aquí:
-👉 [**Ver todas las Plantillas**](../plantillas.md)
+[**Plantillas**](../plantillas.md)
 
 *   `Hack-General` (Aplica bloqueo de IP automático)
 *   `XRay`
