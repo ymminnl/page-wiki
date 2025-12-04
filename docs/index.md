@@ -3,48 +3,48 @@ hide:
   - navigation
 ---
 
-# ✨ Bienvenid@ al Staff
+# Bienvenid@ al Staff
 
-¡Holis! Estamos súper felices de que seas parte del equipo. 💖
-Ser Staff es una responsabilidad importante, pero no te preocupes, aquí aprenderás todo para cuidar el servidor con mucho amor (y justicia).
+Hola! Nos alegra mucho que te unas al equipo :)
+Ser Staff es una responsabilidad importante, pero estamos aquí para apoyarte. El objetivo es cuidar el servidor y asegurar que todos jueguen tranquilos.
 
 ---
 
-## 🌸 ¿Cómo ser un buen Staff?
-La moderación no es solo banear... ¡es hacer que todos se diviertan!
+## ¿Cómo ser un buen Staff?
+La moderación no es solo sancionar, es mantener un buen ambiente.
 
-*   **Sé amable siempre:** Aunque el usuario esté enojado, tú mantén la calma y responde bonito. Tu actitud cambia todo. 🧘‍♀️
-*   **Escucha primero:** Antes de sancionar, deja que se expliquen. A veces solo están confundidos.
-*   **Sé justo:** No sancionamos porque alguien nos caiga mal, sino porque rompió una regla.
+*   **Sé amable siempre:** Aunque el usuario esté molesto, mantén la calma y responde con respeto. Tu actitud define al servidor.
+*   **Escucha primero:** Antes de sancionar, deja que se expliquen. A veces son malentendidos :/
+*   **Sé justo:** Aplicamos las reglas por igual para todos, sin excepciones.
 
-## 📸 Antes de Sancionar (Checklist)
-¡Alto ahí! ✋ Antes de usar un comando, respira y revisa esto rapidito:
+## Antes de Sancionar (Checklist)
+Antes de usar un comando, revisa estos 3 puntos:
 
-1.  [ ] **¿Tengo pruebas?** (Video o foto obligatoria, ¡si no hay prueba no hay sanción!).
-2.  [ ] **¿Revisé su historial?** Usa `/history` para ver si ya lo hizo antes.
-3.  [ ] **¿Es la plantilla correcta?** Asegúrate de elegir bien el código.
+1.  **¿Tengo pruebas?** (Video o captura obligatoria. Sin pruebas no hay sanción).
+2.  **¿Revisé su historial?** Usa `/history` para ver si es reincidente.
+3.  **¿Es la plantilla correcta?** Asegúrate de elegir el código adecuado.
 
-## 🆘 ¿Cuándo pedir ayuda?
-Nadie nace sabiendo. Es mejor preguntar que equivocarse. Llámanos si:
-*   Alguien amenaza con tirar el servidor (DDoS/Bots). 😨
-*   Encontraste un bug grave (como duplicar ítems).
-*   Tienes dudas y no estás segur@ de qué sanción aplicar.
+## ¿Cuándo pedir ayuda?
+Es mejor preguntar que equivocarse. Avísanos si:
+*   Alguien amenaza con ataques al servidor (DDoS/Bots).
+*   Encontraste un bug grave (dupeos, fallos de seguridad).
+*   Tienes dudas sobre qué sanción aplicar.
 
-## ❓ Preguntas Frecuentes (FAQ)
+## Preguntas Frecuentes
 
 > **"¿Puedo banear a mi amigo de broma?"**
-> Nop. Las herramientas de moderación son serias. ¡Para bromas usen Discord! 🚫
+> No. Las herramientas de moderación son serias.
 
 > **"¿Qué hago si me insultan?"**
-> ¡No les respondas feo! Simplemente aplica la sanción `Toxicidad-Leve` y sigue brillando. ✨
+> No entres en la discusión. Aplica la sanción `Toxicidad-Leve` y listo :)
 
-> **"¿Me puedo poner creativo con los tiempos de ban?"**
-> ¡No porfis! Usa siempre las **Plantillas** para que el sistema decida el tiempo justo.
+> **"¿Puedo cambiar los tiempos de ban?"**
+> No, usa siempre las **Plantillas** para que el sistema decida el tiempo automáticamente.
 
 ---
 
-### 📚 Manuales Técnicos
-Aquí tienes las guías detalladas para tu rango:
+### Manuales Técnicos
+Selecciona tu rango para ver los comandos:
 
 <div class="dashboard-grid">
 
