@@ -1,56 +1,95 @@
-/* Estilo para centrar y limpiar */
+:root {
+    --card-bg: var(--md-default-bg-color);
+    --card-border: var(--md-default-fg-color--lightest);
+    --card-hover-border: var(--md-primary-fg-color);
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --transition-speed: 0.3s;
+}
+
+/* Limpieza de layout principal */
 .md-content__inner {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
-/* Tarjetas del Dashboard (Inicio) */
+/* --- Dashboard Grid System --- */
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
 }
 
+/* --- Advanced Card Design --- */
 .card {
-    background: var(--md-default-bg-color);
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px; /* Radio más serio */
     padding: 2rem;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none !important;
-    color: inherit !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Alineación izquierda es más formal */
+    justify-content: flex-start;
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
+/* Barra de acento lateral */
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--md-primary-fg-color);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+/* Hover States & Micro-animations */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-color: var(--md-primary-fg-color);
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+    border-color: var(--card-hover-border);
 }
 
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Iconography */
 .card-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Más discreto */
+    margin-bottom: 1.5rem;
+    color: var(--md-default-fg-color--light);
+    transition: color var(--transition-speed);
+}
+
+.card:hover .card-icon {
     color: var(--md-primary-fg-color);
 }
 
+/* Typography Hierarchy */
 .card h3 {
-    margin: 0;
-    font-weight: 700;
+    margin: 0 0 0.5rem 0 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.025em;
 }
 
 .card p {
-    margin: 0.5rem 0 0;
+    margin: 0;
     color: var(--md-default-fg-color--light);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
 }
 
-/* Ocultar título h1 en la home si queremos un look más limpio */
+/* Ocultar encabezado H1 en home */
 .hide-h1 h1 {
     display: none;
 }
