@@ -13,11 +13,11 @@ Ayuda a usuarios y moderación preventiva del chat.
 *   **`/checkwarn <jugador>`**: Verifica el estado de una advertencia específica.
 
 ### Plantillas Comunes
-*   `Mayusculas`
-*   `Advertencia-General`
-*   `Spam`
-*   `Toxicidad-Leve`
-*   `Publicidad`
+*   `mayusculas`
+*   `advertencia-general`
+*   `spam`
+*   `toxicidad-leve`
+*   `publicidad`
 
 ---
 
