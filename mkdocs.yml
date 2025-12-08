@@ -7,12 +7,13 @@ extra_head:
   - <meta http-equiv="Pragma" content="no-cache">
   - <meta http-equiv="Expires" content="0">
 
+extra_css:
+  - stylesheets/extra.css?v=202512080351
+
 theme:
   name: material
-  language: es
   icon:
     logo: material/book-open-page-variant
-  favicon: assets/favicon.png
   
   font:
     text: Roboto
