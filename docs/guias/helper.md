@@ -1,7 +1,5 @@
 # Helpers
-
-## Descripción
-Asistencia a usuarios y moderación preventiva del chat.
+Ayuda a usuarios y moderación preventiva del chat.
 
 ---
 
