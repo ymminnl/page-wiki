@@ -61,3 +61,66 @@ Puedes ver la lista completa y sus códigos aquí:
 *   **`/invsee`** / **`/enderchest`**: Inspección de inventarios.
 *   **`/vanish`**: Modo invisible.
 *   **`/staffchat`**: Comunicación interna.
+
+---
+
+## CoreProtect (Logs e Inspección)
+Herramienta fundamental para investigar robos y grifeos.
+
+!!! danger "PROHIBIDO: Rollback y Restore"
+    Los comandos `/co rollback` (`/co rb`), `/co restore` (`/co rs`) y `/co purge` están **estrictamente prohibidos** para Moderadores debido a su capacidad destructiva. Su uso sin autorización de un Admin resultará en sanción grave.
+
+### Comandos de Inspección
+*   **`/co inspect`** o **`/co i`**: Activa el modo inspector.
+    *   Golpea un bloque (click izq) para ver quién lo puso/rompió.
+    *   Interactúa (click der) con cofres, puertas o palancas para ver quién los usó.
+*   **`/co near`**: Busca cambios en un radio de 5 bloques alrededor de tu posición.
+*   **`/co status`**: Muestra el estado del plugin y la versión.
+
+### Búsqueda Avanzada (`/co lookup`)
+Usa `/co lookup` o `/co l` para buscar en los registros sin modificar nada.
+**Formato:** `/co l <parámetros>`
+
+#### Parámetros Disponibles
+Puedes combinarlos como necesites (orden no importa).
+
+*   **`u:<usuario>`**: Filtra por jugador.
+    *   Ej: `u:Notch` (Solo Notch)
+    *   Ej: `u:Notch,Jeb` (Notch O Jeb)
+*   **`t:<tiempo>`**: Tiempo atrás a investigar. (w=semanas, d=días, h=horas, m=minutos, s=segundos).
+    *   Ej: `t:10m` (Últimos 10 min)
+    *   Ej: `t:2d5h` (Últimos 2 días y 5 horas)
+*   **`r:<radio>`**: Radio de bloques desde tu posición.
+    *   Ej: `r:10` (10 bloques alrededor)
+    *   Ej: `r:#global` (Todo el servidor)
+*   **`a:<acción>`**: Filtra por tipo de acción.
+    *   `block`: Bloques puestos/rotos.
+    *   `container`: Cofres (ítems metidos/sacados).
+    *   `chat`: Mensajes de chat.
+    *   `kill`: Mobs/animales matados.
+    *   `click`: Interacciones (puertas, botones).
+    *   `session`: Conexiones/Desconexiones.
+    *   `username`: Cambios de nombre.
+*   **`i:<incluir>`**: Incluir solo bloques/ítems específicos.
+    *   Ej: `i:stone` (Solo piedra)
+    *   Ej: `i:diamond_ore,gold_ore` (Solo menas de diamante u oro)
+*   **`e:<excluir>`**: Ignorar bloques/ítems específicos.
+    *   Ej: `e:tnt` (Mostrar todo MENOS tnt)
+
+#### Ejemplos Prácticos
+*   **¿Quién robó diamantes de este cofre hoy?**
+    *   `/co l a:container i:diamond t:24h r:5`
+*   **¿Qué dijo este usuario hace poco?**
+    *   `/co l u:JugadorToxico a:chat t:1h`
+*   **¿Quién rompió bloques aquí?**
+    *   `/co l a:block r:10 t:1h`
+*   **Ver logins de un usuario**
+    *   `/co l u:Sospechoso a:session t:30d`
+
+### Comandos Administrativos (Solo Admins)
+Estos comandos modifican el mundo o la base de datos. **NO USAR.**
+*   `/co rollback` / `/co rb`
+*   `/co restore` / `/co rs`
+*   `/co purge`
+*   `/co migrate-db`
+*   `/co consumer`
