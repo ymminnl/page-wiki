@@ -67,8 +67,8 @@ Puedes ver la lista completa y sus códigos aquí:
 ## CoreProtect (Logs e Inspección)
 Herramienta fundamental para investigar robos y grifeos.
 
-!!! danger "PROHIBIDO: Rollback y Restore"
-    Los comandos `/co rollback` (`/co rb`), `/co restore` (`/co rs`) y `/co purge` están **estrictamente prohibidos** para Moderadores debido a su capacidad destructiva. Su uso sin autorización de un Admin resultará en sanción grave.
+!!! info "Funciones Restringidas"
+    Los comandos de restauración (`/co rollback`, `/co restore`) están **desactivados** para este rango por seguridad, para evitar alteraciones accidentales en el mapa. Si necesitas revertir un grifeo masivo, solicita ayuda a un Admin.
 
 ### Comandos de Inspección
 *   **`/co inspect`** o **`/co i`**: Activa el modo inspector.

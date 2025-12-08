@@ -10,7 +10,7 @@ Códigos de sanción del sistema
 | `XRay` | Mod | 7d -> Perm | |
 | `Toxicidad-Extrema` | Mod | 7d -> Perm | |
 | `Acoso` | Mod | 5d -> Perm | |
-| `Grifeo-Masivo` | Mod | Perm | Requiere Rollback Admin |
+| `Grifeo-Masivo` | Mod | 30d -> Perm | Requiere Rollback Admin |
 | `Hack-PvP` | Mod | 30d -> Perm | KillAura, Reach, etc. |
 | `Abuso-Bug` | Mod | 7d -> Perm | Dupeos, Glitches |
 | `Estafa` | Mod | 14d -> Perm | Robos con engaños |
