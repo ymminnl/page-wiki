@@ -1,6 +1,12 @@
 site_name: Wiki Staff
 site_url: https://staffdocs.onedam.net/
 
+# Cabeceras para evitar caché agresiva
+extra_head:
+  - <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  - <meta http-equiv="Pragma" content="no-cache">
+  - <meta http-equiv="Expires" content="0">
+
 theme:
   name: material
   language: es
