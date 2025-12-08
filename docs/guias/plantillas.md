@@ -6,15 +6,15 @@ Códigos de sanción del sistema
 
 | ID | Rango | Escalada | Notas |
 | :--- | :--- | :--- | :--- |
-| `Hack-General` | Mod | 30d -> Perm | IP Ban |
-| `XRay` | Mod | 7d -> Perm | |
-| `Toxicidad-Extrema` | Mod | 7d -> Perm | |
-| `Acoso` | Mod | 5d -> Perm | |
-| `Grifeo-Masivo` | Mod | 30d -> Perm | Requiere Rollback Admin |
-| `Hack-PvP` | Mod | 30d -> Perm | KillAura, Reach, etc. |
-| `Abuso-Bug` | Mod | 7d -> Perm | Dupeos, Glitches |
-| `Estafa` | Mod | 14d -> Perm | Robos con engaños |
-| `Bot-Attack` | Admin | Perm | IP Ban |
+| `hack-general` | Mod | 30d -> Perm | IP Ban |
+| `xray` | Mod | 7d -> Perm | |
+| `toxicidad-extrema` | Mod | 7d -> Perm | |
+| `acoso` | Mod | 5d -> Perm | |
+| `grifeo-masivo` | Mod | 30d -> Perm | Requiere Rollback Admin |
+| `hack-pvp` | Mod | 30d -> Perm | KillAura, Reach, etc. |
+| `abuso-bug` | Mod | 7d -> Perm | Dupeos, Glitches |
+| `estafa` | Mod | 14d -> Perm | Robos con engaños |
+| `bot-attack` | Admin | Perm | IP Ban |
 
 ---
 
@@ -22,9 +22,9 @@ Códigos de sanción del sistema
 
 | ID | Rango | Escalada |
 | :--- | :--- | :--- |
-| `Spam` | Helper | 15m -> 1d |
-| `Toxicidad-Leve` | Helper | 30m -> 3d |
-| `Publicidad` | Helper | 7d -> Perm |
+| `spam` | Helper | 15m -> 1d |
+| `toxicidad-leve` | Helper | 30m -> 3d |
+| `publicidad` | Helper | 7d -> Perm |
 
 ---
 
@@ -32,5 +32,5 @@ Códigos de sanción del sistema
 
 | ID | Rango | Duración |
 | :--- | :--- | :--- |
-| `Advertencia-General` | Helper | 7 días |
-| `Mayusculas` | Helper | 3 días |
+| `advertencia-general` | Helper | 7 días |
+| `mayusculas` | Helper | 3 días |

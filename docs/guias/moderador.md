@@ -15,10 +15,10 @@ Gestión de sanciones graves, seguridad del servidor y administración de usuari
 Puedes ver la lista completa y sus códigos aquí:
 👉 [**Ver todas las Plantillas**](../plantillas.md)
 
-*   `Hack-General` (Aplica bloqueo de IP automático)
-*   `XRay`
-*   `Toxicidad-Extrema`
-*   `Acoso`
+*   `hack-general` (Aplica bloqueo de IP automático)
+*   `xray`
+*   `toxicidad-extrema`
+*   `acoso`
 
 ---
 
