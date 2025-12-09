@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Bienvenid@ al Staff
+# Bienvenida al Staff
 
 Hola! Nos alegra mucho que te unas al equipo :)
 Ser Staff es una responsabilidad importante. El objetivo es cuidar el servidor y asegurar que todos jueguen tranquilos.
